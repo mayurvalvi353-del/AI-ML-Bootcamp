@@ -158,14 +158,13 @@ else :
     print("Fail")
 
 a = 25
-b = 20
 
-if a > b :
-    print("10 is larger number.")
-elif a == b :
-    print("Both the numbers are equal.")
+if a > 0 :
+    print("Positive number.")
+elif a == 0 :
+    print("Zero.")
 else :
-    print("20 is larger number.")
+    print("Negative number.")
 
 a = 25
 if a % 3 == 0 and a % 5 == 0 :
@@ -241,4 +240,78 @@ num = 5
 while num >= 1 :
     factorial *= num
     num -= 1
-print("Factorial of 5 :", factorial)'''
+print("Factorial of 5 :", factorial)
+
+#Program to find the greater of two numbers entered by the user.
+num1 = int(input("Enter the First number : "))
+num2 = int(input("Enter the Second number : "))
+
+if num1 > num2 :
+    print("The Largest number is", num1)
+else :
+    print("The Largest number is", num2)
+
+# Program to find the largest of three numbers.
+num1 = int(input("Enter the First Number : "))
+num2 = int(input("Enter the Second Number : "))
+num3 = int(input("Enter the Third Number : "))
+
+largest_num = num1
+
+if num2 > num1 :
+    largest_num = num2
+if num3 > num2 :
+    largest_num = num3 
+
+print("The Largest Number : ", largest_num)
+
+#Program to check whether a person is eligible to vote based on age.
+age = 22
+if age >= 18 :
+    print("Eligible!")
+else :
+    print("Not Eligible!")
+
+#Program to print numbers from 1 to 10 using a while loop.
+i = 1
+while i <= 10 :
+    print(i)
+    i += 1
+
+#Program to print all even numbers from 1 to 20 using a while loop.
+i = 1
+while i <= 20 :
+    if i % 2 == 0 :
+        print(i)
+    i += 1
+
+#Program to display the multiplication table of a number entered by the user.
+m = int(input("Enter the number to print the table : "))
+i = 1
+while i <= 10 :
+    print(m,"X",i,"=",m*i)
+    i += 1
+
+#Program to check whether a number is divisible by both 3 and 5.
+m = int(input("Enter the number : "))
+if m % 3 == 0 and m % 5 == 0 :
+    print(m,"is divisible by both 3 and 5.")
+else :
+    print(m,"is not divisible by both 3 and 5.")
+
+#Program to accept five numbers and find their total using a while loop.
+i = 1
+sum = 0
+while i <= 5 :
+    m = int(input("Enter the number : "))
+    sum += m
+    i += 1
+print("The Total of numbers :", sum)
+
+#Program to print numbers from 10 down to 1 using a while loop.
+i = 10
+while i >= 1 :
+    print(i)
+    i -= 1'''
+
+
