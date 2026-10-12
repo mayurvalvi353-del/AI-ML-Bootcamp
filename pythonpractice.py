@@ -312,6 +312,41 @@ print("The Total of numbers :", sum)
 i = 10
 while i >= 1 :
     print(i)
-    i -= 1'''
+    i -= 1
+
+num = 76543
+result = 0
+while num > 0 :
+    temp = num % 10
+    result = (result*10) + temp
+    num //= 10
+print(result)
+
+for count in range(100) :
+    print(count)
+
+for count in range(1, 10) :
+    if count % 2 != 0 :
+        print(count)
+
+for count in range(10, 0, -1) :
+    print(count)
+
+sum = 0
+for count in range(1, 11) :
+    sum += count
+print(sum)
+
+for count in range(1, 11) :
+    print(f"5 X {count} = {5*count}")
+
+for count in range(1, 21):
+    if count % 3 == 0 :
+        print(count)
+
+factorial = 1
+for count in range(1, 6):
+    factorial *= count
+print(factorial)'''
 
 
