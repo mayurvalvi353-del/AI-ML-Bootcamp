@@ -347,6 +347,144 @@ for count in range(1, 21):
 factorial = 1
 for count in range(1, 6):
     factorial *= count
-print(factorial)'''
+print(factorial)
 
+#Program to count the number of digits in 98765.
+n = 98765
+count = 0
+while n > 0 :
+    count += 1
+    n //= 10
+print(count)
 
+#Program to calculate the sum of digits of 12345.
+n = 12345
+sum = 0
+while n > 0 :
+    temp = n % 10
+    sum += temp
+    n //= 10
+print(sum)
+
+#Program to print numbers from 1 to 10 but stop when the number reaches 7.
+n = 1
+while n <= 10 :
+    print(n)
+    if n == 7 :
+        break
+    n += 1
+
+#Program to print numbers from 1 to 10, skipping multiples of 3.
+n = 1
+while n <= 10 :
+    if n % 3 != 0 :
+        print(n)
+    n += 1
+
+#Program to calculate the average of 5 numbers using a while loop.
+n = 1
+sum = 0
+while n <= 5 :
+    num = float(input("Enter the number : "))
+    sum += num
+    n += 1
+average = sum / 5
+print("The Average of the numbers : ",average)
+
+#Program to find the largest number from 5 user inputs using a while loop.
+n = 1
+largest_number = 0
+while n <= 5 :
+    num = int(input("Enter the number : "))
+    if largest_number == 0 or largest_number < num:
+        largest_number = num
+    n += 1
+print(largest_number)
+
+#Program using a for loop to print numbers from 1 to 5.
+for i in range(1, 6) :
+    print(i)
+
+#Program to print even numbers from 2 to 10 using a for loop.
+for i in range(1, 11) :
+    if i % 2 == 0 :
+        print(i)
+
+#Program to print odd numbers from 1 to 9 using a for loop.
+for i in range(1, 10) :
+    if i % 2 != 0 :
+        print(i)
+
+#Program to print numbers from 10 down to 1 using a for loop.
+for i in range(10, 0, -1) :
+    print(i)
+
+#Program to calculate the sum of numbers from 1 to 10 using a for loop.
+sum = 0
+for i in range(1, 11):
+    sum += i
+print(sum)
+
+#Program to print the multiplication table of 5 using a for loop.
+for i in range(1, 11) :
+    print(f"5 X {i} = {5*i}")
+
+#Program to print each item from the list ["Apple", "Banana", "Mango"].
+fruits = ["Apple", "Banana", "Mango"]
+for i in fruits :
+    print(i)
+
+#Program to print each character of the string "Python" using a for loop.
+text = 'Python'
+for i in text :
+    print(i)
+
+#Program to print numbers from 1 to 20 that are divisible by 3.
+for i in range(1, 21) :
+    if i % 3 == 0 :
+        print(i)
+
+#Program to find the factorial of 5 using a for loop.
+factorial = 1
+for i in range(1, 6):
+    factorial *= i
+print(factorial)
+
+#Program to count the number of vowels in the string "programming".
+string = 'programming'
+vowels_count = 0
+for i in string :
+    if i == 'a' :
+        vowels_count += 1
+    elif i == 'e' :
+        vowels_count += 1
+    elif i == 'i' :
+        vowels_count += 1
+    elif i == 'o' :
+        vowels_count += 1
+    elif i == 'u' :
+        vowels_count += 1
+    else :
+        continue
+print("number of vowels in the string programming :", vowels_count)
+
+#Program to print only positive numbers from [-3, 5, -1, 8, 0, 4].
+num = [-3, 5, -1, 8, 0, 4]
+for i in num :
+    if i > 0 :
+        print(i)
+
+#Program to print numbers from 1 to 10 but skip multiples of 3 using continue.
+for i in range(1, 11) :
+    if i % 3 == 0 :
+        continue
+    print(i)
+
+#Program to calculate the average of [70, 80, 90, 60, 100] using a for loop.
+num = [70, 80, 90, 60, 100]
+sum = 0
+for i in num :
+    sum += i
+
+average = sum/(len(num))
+print(average)'''
