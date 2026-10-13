@@ -487,4 +487,28 @@ for i in num :
     sum += i
 
 average = sum/(len(num))
-print(average)'''
+print(average)
+
+num = 0
+while num < 10 :
+    num += 1
+    if num == 5 :
+        continue
+    else :
+        print(num)
+
+i = 1
+while i <= 10 :
+    if i % 7 == 0 :
+        break
+    else :
+        print(i)
+    i += 1'''
+
+i = 0
+while i < 10 :
+    i += 1
+    if i % 2 == 0 :
+        continue
+    else :
+        print(i)
