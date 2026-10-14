@@ -503,7 +503,7 @@ while i <= 10 :
         break
     else :
         print(i)
-    i += 1'''
+    i += 1
 
 i = 0
 while i < 10 :
@@ -512,3 +512,77 @@ while i < 10 :
         continue
     else :
         print(i)
+
+#Program to print numbers from 1 to 10 and stop the loop when the number reaches 6 using break.
+i = 1
+while i <= 10 :
+    if i == 6 :
+        break
+    else :
+        print(i)
+    i += 1
+
+#Program to print numbers from 1 to 10 but skip number 5 using continue.
+i = 0
+while i < 10 :
+    i += 1
+    if i == 5 :
+        continue
+    else :
+        print(i)
+
+#Program to print numbers from 1 to 10 and stop when the number is divisible by 7.
+i = 1
+while i <= 10 :
+    if i % 7 == 0 :
+        break
+    else :
+        print(i)
+    i += 1
+#Program to print numbers from 1 to 10, skipping all even numbers.
+i = 0 
+while i < 10 :
+    i += 1
+    if i % 2 == 0 :
+        continue
+    else :
+        print(i)
+
+#Program to search for the number 8 in a list and stop when it is found.
+num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for i in num :
+    if i == 8 :
+        break
+    else :
+        print(i)
+
+#Program to print only positive numbers and skip negative numbers.
+num = [1, -1, 2, -2, 3, -3, 4, -4, 5, -5, 10, -10]
+for i in num :
+    if i < 0 :
+        continue
+    else : 
+        print(i)
+
+#Program to print numbers from 1 to 20 but skip multiples of 3.
+for i in range(1, 21) :
+    if i % 3 == 0 :
+        continue
+    else :
+        print(i)
+
+#Program to stop searching when the first negative number is found.
+num = [1, 2, 3, 4, 5, -5, 6, -6, 7, 8, 9, 10]
+for i in num :
+    if i < 0 :
+        break
+    else :
+        print(i)
+
+#Program to print all numbers except 0 from a list.
+num = [1, 3, 5, 2, 4, 6, 0, 10, 8, 12, 11, 13, 14, 16, 20]
+for i in num :
+    if i == 0 :
+        continue
+    else :
+        print(i)'''
