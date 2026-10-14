@@ -585,4 +585,98 @@ for i in num :
     if i == 0 :
         continue
     else :
-        print(i)'''
+        print(i)
+
+numbers = [10, 20, 30 , 40, 50]
+print(numbers)
+print(type(numbers))
+
+print("First element of numbers :", numbers[0])
+print("Second element of numbers :", numbers[1])
+print("Third element of numbers :", numbers[2])
+print("Fourth element of numbers :", numbers[3])
+print("Fifth element of numbers :", numbers[4])
+
+numbers[1] = 100
+print(numbers)
+print(f'second element : {numbers[1]}')
+
+numbers[0] = numbers[2]
+print(f"First element : {numbers[0]}")
+print(len(numbers))
+
+myList = ['One', 2, 3.5, True, False, [1, 2, 3]]
+print(len(myList))
+print(myList)
+myList[0] = 1
+print(myList)
+print(type(myList))
+
+print(len(myList))
+del myList[0]
+print(len(myList))
+
+print(myList[0])
+print(myList[3])
+
+del myList
+print(myList)
+
+print(myList[-1])
+
+print(myList[-2])
+
+list = [1, 2, 3, 4, 5]
+print(list)
+print(len(list))
+
+list.append(6)
+
+print(list)
+print(len(list))
+
+list.insert(0, 0)
+
+print(list)
+print(len(list))
+
+list = [1, 2, 3, 4, 5]
+
+for i in range(len(list)) :
+    print("Element :", list[i])
+
+for i in range(len(list)) :
+    print(f'list[{i}] -> {list[i]}')
+
+my_list = []
+
+for count in range(1, 11) :
+    my_list.append(count)
+print(my_list)
+
+for index in range(len(my_list)) :
+    my_list[index] = my_list[index] + 10
+print(my_list)'''
+
+a = 10
+b = 20
+
+#1 ----------
+#b = a + b
+#a = b - a
+#b = b - a 
+
+#2 ----------
+#c = b
+#b = a
+#a = c
+
+#3 ----------
+#b = a * b
+#a = b // a
+#b = b // a
+
+a, b = b, a
+
+print(a)
+print(b)
