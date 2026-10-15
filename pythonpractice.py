@@ -656,7 +656,7 @@ print(my_list)
 
 for index in range(len(my_list)) :
     my_list[index] = my_list[index] + 10
-print(my_list)'''
+print(my_list)
 
 a = 10
 b = 20
@@ -680,3 +680,30 @@ a, b = b, a
 
 print(a)
 print(b)
+
+#
+# list = [8, 10, 6, 2, 4]
+list = [2, 4, 8, 6, 10]
+count = 0
+swapped = True
+for index1 in range(len(list)-1) :
+    swapped = False
+    for index in range(len(list)-(index1 + 1)) :
+        count += 1
+        if list[index] > list[index + 1] :
+            list[index], list[index + 1] = list[index + 1], list[index]
+    if swapped == False :
+        break
+print(list)
+print(f"Loop ran for {count} times.")
+
+while swapped :
+    swapped = False
+    for i in range(len(list) - 1) :
+        count += 1
+        if list[i] > list[i + 1] :
+            swapped = True
+            list[i], list[i + 1] = list[i + 1], list[i]
+
+print(list)
+print(f"Loop ran for {count} times.")'''
