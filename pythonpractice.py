@@ -706,4 +706,56 @@ while swapped :
             list[i], list[i + 1] = list[i + 1], list[i]
 
 print(list)
-print(f"Loop ran for {count} times.")'''
+print(f"Loop ran for {count} times.")
+
+#Program to create a list of numbers and create a new list containing only the numbers greater than 10.
+numbers = [1, 2, 3, 5, 10, 12, 13, 11, 18, 20, 22]
+num = []
+for i in range(len(numbers)) :
+    if numbers[i] > 10 :
+        num.append(numbers[i])
+print(num)
+
+#Program to create a list of student marks and calculate the average marks.
+marks = [22, 39, 42, 25, 55, 34, 47, 49, 30]
+sum = 0
+for i in marks :
+    sum += i
+average = sum/(len(marks))
+
+print(average)
+
+#Program to create a list of numbers and count how many numbers are greater than 50.
+num = [1, 12, 23, 34, 45, 56, 67, 78, 89, 100, 102, 113, 124, 135, 146, 150]
+count = 0
+for i in num :
+    if i > 50 :
+        count += 1
+print(count)
+
+#Program to create a list of numbers and reverse the list using reverse().
+my_list = ['n', 'o', 'h', 't', 'y', 'P']
+my_list.reverse()
+print(my_list)
+
+#Program to create a list of numbers and calculate their sum using sum().
+num = [1, 2, 3, 4, 5]
+total = sum(num)
+print(total)
+
+#Program to create a list of numbers and find the smallest number using min().
+num = [1, 2, 3, 4, 5]
+smallest = min(num)
+print(smallest)
+
+#Program to create a list and remove the last element using pop().
+num = [1, 2, 3, 4, 5]
+num.pop()
+print(num)
+
+#Program to create a list of numbers and find the largest number using max().
+num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+maximum = max(num)
+print(maximum)'''
+
+
