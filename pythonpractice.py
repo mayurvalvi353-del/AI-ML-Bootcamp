@@ -756,6 +756,67 @@ print(num)
 #Program to create a list of numbers and find the largest number using max().
 num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 maximum = max(num)
-print(maximum)'''
+print(maximum)
 
+#Bubble Sort
+my_list = [8, 10, 6, 2, 4]
+for i in range(len(my_list) - 1) :
+    for index in range(len(my_list) - 1) :
+        if my_list[index] > my_list[index + 1] :
+            my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
+print(my_list)
+
+list_1 = [1]
+list_2 = list_1
+list_1[0] = 2
+print(list_2)
+
+list = []
+for i in range(0, 500) :
+    list.append(i + 1)
+
+#175 - 450
+new_list = list[174:450]
+print(new_list)
+
+my_list = [10, 8, 6, 4, 2]
+my_list1 = my_list[:]
+print("21 in my_list :", 21 in my_list)
+print("2 in my_list :", 2 in my_list)
+
+print(my_list1)
+my_list1[2] = 18
+print("21 in my_list :", 21 in my_list)
+print("2 in my_list :", 2 in my_list)
+print("18 in my_list :", 18 in my_list)
+
+row = []
+for i in range(8) :
+    row.append("WHITE_PAWN")
+print(row)
+print(len(row))
+
+row = ["WHITE_PAWN1" for i in range(8)]
+print(row)
+print(len(row))
+
+squares = [x**2 for x in range(10)]
+print(squares)
+
+squares = [x**2 for x in range(11)]
+print(squares)
+
+squares = [x**2 for x in range(1, 11)]
+print(squares)
+
+twos = [2**i for i in range(11)]
+print(twos)
+
+squares = [x**2 for x in range(11)]
+
+odds = [x for x in squares if x % 2 != 0]
+print(odds)
+
+for element in squares :
+    print(element)'''
 
