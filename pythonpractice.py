@@ -818,5 +818,47 @@ odds = [x for x in squares if x % 2 != 0]
 print(odds)
 
 for element in squares :
-    print(element)'''
+    print(element)
 
+list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+print(list[0][0])
+print(list[0][1])
+print(list[2][1])
+print(list[3][3])
+
+board = []
+for i in range(8) :
+    row = ["EMPTY" for i in range(8)]
+    board.append(row)
+
+#print(board)
+
+board[0][0] = "ROOKS"
+board[0][7] = "ROOKS"
+board[7][0] = "ROOKS"
+board[7][7] = "ROOKS"
+
+board[0][1] = "KNIGHT"
+board[0][6] = "KNIGHT"
+board[7][1] = "KNIGHT"
+board[7][6] = "KNIGHT"
+
+print(board)
+
+temps = [[h for h in range(24)] for d in range(31)]
+print(temps) 
+sum = 0
+
+for i in range(len(temps)) :
+    sum += temps[i][11]
+average = sum / len(temps)
+print(average)
+
+greater = -9999999
+
+for row in range(len(temps)) :
+    for col in range(24) :
+        if greater < temps[row][col] :
+            greater = temps[row][col]
+print(greater)'''
