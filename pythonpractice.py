@@ -861,4 +861,37 @@ for row in range(len(temps)) :
     for col in range(24) :
         if greater < temps[row][col] :
             greater = temps[row][col]
-print(greater)'''
+print(greater)
+
+def message() :
+    print("Enter a value : ")
+
+#print("Enter a value : ")
+#message()
+#a = int(input())
+#message()
+#print("Enter a value : ")
+#b = int(input())
+#message()
+#print("Enter a value : ")
+#c = int(input())
+
+def greet(name) :
+    print("Hello,", name)
+
+name = input("Enter your Name : ")
+greet(name)
+
+def greetwithdetails(name, rollNo) :
+    print("Hello, Roll Number", rollNo, name)
+
+name = input("Enter your name : ")
+rollNo = input("Enter your Roll Number : ")
+greetwithdetails(name, rollNo)
+
+def message(what, number) :
+    print("Enter", what, "number", number)
+message("telephone", 11)
+message("price", 5)
+message("number", "number")'''
+
