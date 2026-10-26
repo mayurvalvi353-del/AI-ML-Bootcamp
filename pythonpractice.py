@@ -893,5 +893,105 @@ def message(what, number) :
     print("Enter", what, "number", number)
 message("telephone", 11)
 message("price", 5)
-message("number", "number")'''
+message("number", "number")
 
+message(number = 11, what = "telephone")
+
+def adding(a, b, c) :
+    print(a, "+", b, "+", c, "=", a+b+c)
+
+adding(1,2,3)
+adding(c = 1, b = 2, a = 3)
+adding(1, b = 2, c = 3)
+adding(a = 1, b = 2, c = 3)
+
+def happy_new_year(wishes = True) :
+    print("One......")
+    print("Two......")
+    print("Three......")
+    if not wishes :
+        return
+    print("Happy new Year!")
+
+happy_new_year()
+
+happy_new_year(False)
+
+def greet():
+    print(1)
+    print(2)
+    print(3)
+    return
+    print(4)
+
+greet()
+
+def sum(a, b) :
+    return a + b
+result = sum(11, 5)
+print(result)
+
+def sum(a, b, c, d, e) :
+    return [a, b, c, d, e]
+result = sum(11, 15, 17, 20, 23)
+print(result)
+print(result[0])
+print(result[1])
+print(result[2])
+print(result[3])
+print(result[4])
+
+value = None
+if value == None :
+    print("Sorry, you don't carry a value.")
+print(type(value))
+
+def hello(check) :
+    if check is True :
+        return
+result = hello(False)
+print(result)
+
+result = hello(True)
+print(result)
+
+def strange_function(n) :
+    if n % 2 == 0 :
+        return True
+print(strange_function(2))
+print(strange_function(1))
+
+def strange_list_fun(n):
+    strange_list = []
+    for i in range(0, n) :
+        strange_list.insert(0, i)
+    return strange_list
+
+print(strange_list_fun(5))
+
+def greet():
+    print("Hello, Python!")
+
+greet()
+
+def welcome(name) :
+    print("Welcome", name, "!")
+
+welcome("Mayur")
+
+def multiply(a, b) :
+    return a*b
+print(multiply(5,2))
+
+def square(n) :
+    return n*n
+print(square(4))
+
+def is_even(n) :
+    if n % 2 == 0 :
+        print(n, "is an even number.")
+    else :
+        print(n, "is not an even number.")
+
+is_even(4)'''
+    
