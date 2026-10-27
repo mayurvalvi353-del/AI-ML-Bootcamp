@@ -993,5 +993,87 @@ def is_even(n) :
     else :
         print(n, "is not an even number.")
 
-is_even(4)'''
-    
+is_even(4)
+
+def scope_test():
+    x = 123
+scope_test()
+print(x)
+
+def my_fuction():
+    print("Do I know that variable ?", var)
+var = 1
+my_fuction()
+print(var)
+
+var = 2
+def mult_by_var(x):
+    return x*var
+print(mult_by_var(7))
+
+var = 7 
+def mult(x):
+    var = 5
+    return x*var
+print(mult(7))
+
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable ?", var)
+var = 1
+my_function()
+print(var)
+
+var = 2
+print(var)
+def return_var():
+    global var
+    var = 5
+    return var
+print(return_var())
+print(var)
+
+def my_function(n):
+    print("I got", n)
+    n += 1
+    print("I have", n)
+var = 1
+my_function(var)
+print(var)
+
+def my_function(my_list_1):
+    print("Print #1 :", my_list_1)
+    print("Print #2 :", my_list_2)
+    my_list_1 = [0, 1]
+    print("Print #3 :", my_list_1)
+    print("Print #4 :", my_list_2)
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5 :", my_list_2)
+
+def my_function(my_list_1):
+    print("Print #1 :", my_list_1)
+    print("Print #2 :", my_list_2)  
+    my_list_1 = [0, 1]
+    my_list_1.append(5)
+    print("Print #3 :", my_list_1)
+    print("Print #4 :", my_list_2)
+    del my_list_1[0]
+    print("Print #5 :", my_list_1)
+    print("Print #6 :", my_list_2)
+
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #7 :", my_list_2)
+
+tuple_1 = (1, 2, 3, 5, 8)
+tuple_2 = 1., .5, .25, .125
+tuple_3 = 1, 2, 4, 6, 8, 9, 10
+
+print(tuple_1)
+print(type(tuple_1))
+print(tuple_2)
+print(type(tuple_2))
+print(tuple_3)
+print(type(tuple_3))'''
