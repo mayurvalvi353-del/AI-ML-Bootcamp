@@ -1076,4 +1076,105 @@ print(type(tuple_1))
 print(tuple_2)
 print(type(tuple_2))
 print(tuple_3)
-print(type(tuple_3))'''
+print(type(tuple_3))
+
+my_tuple = 1, 10, 100, 1000
+#my_tuple.append(10000)
+#del my_tuple[1]
+print(my_tuple)
+print(my_tuple[0])
+print(my_tuple[1])
+print(my_tuple[2])
+print(my_tuple[3])
+print("Length of tuple is", len(my_tuple))
+
+my_tuple1 = (10000, 100000)
+my_tuple2 = my_tuple + my_tuple1
+print(my_tuple2)
+print("Length of my_tuple2 :", len(my_tuple2))
+
+my_tuple2 = my_tuple2 + (12,)
+print(my_tuple2)
+print("Length of my_tuple2 :", len(my_tuple2)
+
+my_tuple = (1, 10, 100, 1000)
+print(my_tuple * 3)
+
+check = 100 in my_tuple
+print(check)
+
+check = 200 in my_tuple
+print(check)
+
+check = 100 not in my_tuple
+print(check)
+
+check = 200 not in my_tuple
+print(check)
+
+tuple = (1, 2, 3, 4, 5)
+print("---------------------")
+for index in range(0, len(tuple)) :
+    print(tuple[index])
+print("---------------------")
+for element in tuple :
+    print(element)
+
+my_tuple = 1, 2, "string"
+print(my_tuple)
+print(type(my_tuple))
+
+my_list = [2, 4, 6]
+print(my_list)
+print(type(my_list))
+tup = tuple(my_list)
+print(tup)
+print(type(tup))
+
+var = 123
+
+t1 = (1,)
+t2 = (2,)
+t3 = (3, var)
+
+t1, t2, t3 = t2, t3, t1
+
+print(t1, t2, t3)
+
+dict = {
+    "cat" : "meow",
+    "dog" : "bhau",
+    "cow" : "moo"
+}
+
+print(dict)
+print(type(dict))
+print(len(dict))
+
+dict = {
+    'a':"A",
+    'a':"AA",
+    'b':"B"
+}
+print(dict)
+print(type(dict))
+print(len(dict))
+
+dictionary = {
+    "cat" : "chat",
+    "dog" : "chien",
+    "horse" : "cheval"
+}
+
+#words = ["cat", "lion", "horse", "dog"]
+words = dictionary.keys()
+for word in words :
+    if word in dictionary :
+        print(word, "---->", dictionary[word])
+    else :
+        print(word, "is not in the dictionary.")
+print(words)
+print(type(words))'''
+
+
+      
