@@ -1174,7 +1174,74 @@ for word in words :
     else :
         print(word, "is not in the dictionary.")
 print(words)
-print(type(words))'''
+print(type(words))
 
+animals = {
+    "cat" : "meow",
+    "dog" : "bhaw", 
+    "cow" : "moo"
+}
+print(animals.items())
+print("------------------------")
+for item in animals.items():
+    print(item[0], ":", item[1])
+print("------------------------")
+print(animals.values())
+print("------------------------")
+for value in animals.values():
+    print(value)
 
-      
+dictionary = {
+    "cat" : "chat",
+    "dog" : "chien", 
+    "horse" : "cheval"
+}
+
+dictionary1 = dictionary
+print("dictionary :", dictionary)
+print("dictionary1 :", dictionary1)
+dictionary["cat"] = "CAT"
+print("-----------------------------")
+print("dictionary :", dictionary)
+print("dictionary1 :", dictionary1)
+print("-----------------------------")
+dictionary1 = dictionary.copy()
+dictionary["cat"] = "CATTTT"
+print("-----------------------------")
+print("dictionary :", dictionary)
+print("dictionary1 :", dictionary1)
+
+dictionary = {
+    "cat" : "chat",
+    "dog" : "chien", 
+    "horse" : "cheval"
+}
+
+dictionary["cat"] = "123"
+print(dictionary)
+dictionary["parrot"] = "456"
+print("-----------------------------------------------")
+print(dictionary)
+del dictionary["cat"], dictionary["dog"]
+print("-----------------------------------------------")
+print(dictionary)
+print("-----------------------------------------------")
+pol_eng_dictionary = {"kwiat":"flower"}
+pol_eng_dictionary.update({"gleba":"soil"})
+print(pol_eng_dictionary)
+print("-----------------------------------------------")
+pol_eng_dictionary.popitem()
+print(pol_eng_dictionary)
+
+pol_eng_dictionary = {'zamek' : "castle", "woka" : "water", "gleba" : "soil"}
+
+for key, value in pol_eng_dictionary.items():
+    print("Pol/Eng ->", key, ":", value)
+
+if "castle".lower() in pol_eng_dictionary :
+    print("Yes")
+else :
+    print("No")
+
+pol_eng_dictionary.clear()
+print(pol_eng_dictionary)'''
