@@ -1245,3 +1245,24 @@ else :
 
 pol_eng_dictionary.clear()
 print(pol_eng_dictionary)'''
+
+name = input("Enter name (press enter to exit) : ")
+marks = float(input("Enter marks : "))
+a = {}
+average = 0
+while name:
+    if name in a :
+        a[name] += (marks,)
+    else :
+        a.update({name : (marks,)})
+    if name :
+        name = input("Enter name (press enter to exit) : ")
+        if name :
+            marks = float(input("Enter marks : "))
+
+print(a)
+
+for name, marks in a.items():
+    print("Name :", name, "Average :", sum(marks)/len(marks))
+
+    
