@@ -1244,7 +1244,7 @@ else :
     print("No")
 
 pol_eng_dictionary.clear()
-print(pol_eng_dictionary)'''
+print(pol_eng_dictionary)
 
 name = input("Enter name (press enter to exit) : ")
 marks = float(input("Enter marks : "))
@@ -1265,4 +1265,58 @@ print(a)
 for name, marks in a.items():
     print("Name :", name, "Average :", sum(marks)/len(marks))
 
-    
+name = input("Enter your name : ")
+print("Hey,", name)
+
+age = input("Enter your age : ")
+print(f"You are {age} years old!")
+#print(type(age))
+if type(age) == str :
+    print(f"You will live {85 - int(age)} Years more.")
+
+value = int(input('Enter a natural number : '))
+print(f"The reciprocal of {value} is {1/value}")
+
+try :
+    value = int(input('Enter a natural number : '))
+    print(f"The reciprocal of {value} is {1/value}")
+except :
+    print("I don't know what to do.")
+
+try :
+    value = int(input('Enter a natural number : '))
+    print(f"The reciprocal of {value} is {1/value}")
+except ValueError :
+    print("I don't know what to do.")
+except ZeroDivisionError :
+    print("Division by zero is not possible.")
+except :
+    print("I am not prepared for this.")
+
+try :
+    short_list = [1]
+    one_value = short_list[0.5]
+except:
+    print("Float index is not possible.")
+
+try :
+    short_list = [1]
+    short_list.append(2)
+    short_list.depend(3)
+except AttributeError :
+    print("Error caught.")'''
+
+temperature = input("Enter the temperature : ")
+
+try :
+    temperature = float(temperature)
+    if isinstance(temperature, float) :
+        if temperature > 0 :
+            print("Above Zero.")
+        elif temperature < 0 :
+            print("Below Zero.")
+        else :
+            print("Only float values are allowed!")
+except :
+    print("Only float values are allowed!")
+
