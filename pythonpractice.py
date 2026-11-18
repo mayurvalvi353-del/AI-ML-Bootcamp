@@ -1331,5 +1331,56 @@ except :
 else :
     print("This is else !")
 finally :
-    print("This is finally !")'''
+    print("This is finally !")
 
+import math
+
+print(math.sin(math.pi/2))
+
+import math
+
+def sin(x) :
+    if 2 * x == pi :
+        return 0.9999
+    else :
+        return None
+pi = 3.14
+print(sin(pi/2))
+
+print(math.sin(math.pi/2))
+
+from math import pi, sin
+print(sin(pi/2))
+
+def sin(x) :
+    if 2 * x == pi :
+        return 0.9999
+    else :
+        return None
+pi = 3.14
+print(sin(pi/2))
+
+import math as mathematics
+
+print(mathematics.pi)
+print(mathematics.sin(mathematics.pi/2))
+
+from math import pi as PI, sin as sine
+
+print(PI)
+print(sine(PI/2))
+
+import math
+
+for name in dir(math) :
+    print(name)
+
+from math import pi, radians, degrees, sin, cos, tan, asin
+
+ad = 90
+ar = radians(ad)
+ad = degrees(ar)
+print(ad == 90)
+print(ar == pi / 2.)
+print(sin(ar) / cos(ar) == tan(ar))
+print(asin(sin(ar)) == ar)'''
