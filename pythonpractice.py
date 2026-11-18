@@ -1304,7 +1304,7 @@ try :
     short_list.append(2)
     short_list.depend(3)
 except AttributeError :
-    print("Error caught.")'''
+    print("Error caught.")
 
 temperature = input("Enter the temperature : ")
 
@@ -1319,4 +1319,17 @@ try :
             print("Only float values are allowed!")
 except :
     print("Only float values are allowed!")
+
+try :
+    num = 10/5
+    if num == 2 :
+        raise AttributeError
+except AttributeError :
+    print("Attribute error is raised !")
+except :
+    print("Exception raised !")
+else :
+    print("This is else !")
+finally :
+    print("This is finally !")'''
 
