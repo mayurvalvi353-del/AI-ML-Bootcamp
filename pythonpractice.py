@@ -1384,3 +1384,23 @@ print(ad == 90)
 print(ar == pi / 2.)
 print(sin(ar) / cos(ar) == tan(ar))
 print(asin(sin(ar)) == ar)'''
+
+#Number Guessing Game - Mini Project
+import random
+attempts = 0
+secret = random.randint(1, 100)
+while True :
+    guess = input("Enter the number you are guessing : ")
+    if not guess.isdigit() :
+        print("Please Enter a whole number between 1 to 100.")
+        continue
+    guess = int(guess)
+    attempts += 1
+    if guess < secret :
+        print("Too low! Try again.")
+    elif guess > secret :
+        print("Too high! Try again.")
+    else :
+        print(f"Correct! You guessed it in {attempts} attempts.")
+        break
+
